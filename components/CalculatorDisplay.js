@@ -5,7 +5,7 @@ import styles from './CalculatorDisplay.module.css';
 const CalculatorDisplay = ({ value }) => {
     return (
         <div className={styles.display}>
-            <span>{value}</span>
+            <span>{value || '0'}</span>
         </div>
     );
 };
